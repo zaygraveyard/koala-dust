@@ -41,7 +41,7 @@
 	"fileTypes": [{
 		"extension": "dust", 
 		"output": "jst",
-		"icon": "../../assets/img/filetypes/dust.png",
+		"icon": "dust.png",
 		"category": "template"
 	}],
 

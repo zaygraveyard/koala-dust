@@ -1,0 +1,68 @@
+{
+	"name": "dust",
+	"display": "Dust",
+	"description": "A koala extension that adds support for compiling dust file.",
+	"keywords": [ "koala", "dust", "compiler"],
+	"version": "1.0.0",
+	"koalaVersion": ">=2.0.0",
+	"main": "DustCompiler.js",
+
+	"bugs": {
+		"url": "https://github.com/zaygraveyard/koala-dust/issues"
+	},
+	"author": {
+		"name": "Ziad Khoury Hanna",
+		"email": "ziad.khoury.h@gmail.com",
+		"web": "https://github.com/zaygraveyard"
+	},
+	"contributors": [
+	],
+	"maintainers": {
+		"name": "Ziad Khoury Hanna",
+		"email": "ziad.khoury.h@gmail.com",
+		"project": "https://github.com/zaygraveyard/koala-dust",
+		"issues": "https://github.com/oklai/koala/issues"
+	},
+	"dependencies": {
+		"dustjs-linkedin": "~1.2.3"
+	},
+	"engines": {
+		"koala": ">=2.0.0"
+	},
+	"licenses": [{
+		"type": "Apache 2.0",
+		"url": "http://www.apache.org/licenses/LICENSE-2.0"
+	}],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/oklai/koala.git"
+	},
+
+	"fileTypes": [{
+		"extension": "dust", 
+		"output": "jst",
+		"icon": "dust.png",
+		"category": "template"
+	}],
+
+	"options": [],
+
+	"advanced": [
+		{
+			"type": "checkbox",
+			"name": "useCommand",
+			"display": "Use the System Dust compiler",
+			"default": false
+		},
+		{
+			"type": "text",
+			"name": "commandPath",
+			"display": "Use the Dust executable at this path",
+			"default": "",
+			"placeholder": "Default: dustc",
+			"depend": "useCommand"
+		}
+	],
+
+	"libraries": ["Dust linkedIn@1.2.3"]
+}
